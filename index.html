@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBIT</title>
+    <link rel="stylesheet" href="./styles/navebar.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: red;
+            height: 40px;
+            align-items:baseline ;
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+        }
+        ul li{
+            list-style-type: none;
+           
+        }
+        ul li a{
+            text-decoration: none;
+             color: white;
+             font-weight: 700;
+        }
+        button{
+            padding: 2px 8px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: 600;
+        }
+        button:hover{
+            background-color: rgb(64, 53, 53);
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+        .hero-container{
+            display: flex;
+            padding: 10px 40px;
+        }
+        .img-box{
+            height: 200px;
+            width: 200px;
+            
+        }
+        img{
+             height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+        img:hover{
+            transform:scale(1.04)
+        }
+        .learn-btn{
+            background-color: red;
+            margin-top: 30px;
+            font-size: 20px;
+            padding: 9px 20px;
+        }
+        .card{
+            border: solid 1px;
+            width: 220px;
+            background-color: rgb(215, 214, 214);
+            border-radius: 7px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .card-image{
+           
+            height: 100px;
+            width: 190px;
+
+        }
+        .image{
+            height: 100px;
+            width: 200px;
+            
+        }
+        .card-title{
+            font-weight: 800;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0px;
+        }
+        .price{
+            background-color: red;
+        }
+        .enroll-btn{
+            background-color: green;
+        }
+        .cards-container{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+           padding-left: 80px;
+        }
+        .course{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            color: red;
+            margin: 20px 0px;
+        }
+        .hr{
+            margin-top: 5px;
+            margin-bottom: 30px;
+            background-color: red;
+        }
+        .footer{
+            border: solid 2px;
+            display: flex;
+            justify-content: space-evenly;
+            height: 200px;
+            background-color: red;
+            align-items: center;
+            margin: 20px 0px;
+        }
+        .testimonial-1{
+            height: 150px;
+            width: 600px;
+            border: 2px solid green;
+            margin: auto;
+            border-radius: 10px;
+            padding: 27px;
+            margin-bottom: 25px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        .testimonials{
+            margin: 70px 0px;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <h2>Career Bridge</h2>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">ContactUs</a></li>
+                 <button><a href="./pages/login.html">Login</a></button>
+                 <button><a href="./pages/signup.html">Signup</a></button>
+            </ul>
+            
+        </div>
+    </div>
+    <!-- hero section -->
+    <section>
+        <div class="hero-container">
+            <div class="hero-left">
+                <p>Salaar: Part 1 – Ceasefire is a 2023 Indian Telugu-language epic neo-noir action thriller directed by Prashanth Neel. It serves as the introduction to a two-part saga centered on the fictional, dystopian city-state of Khansaar</p>
+
+                 <p>Salaar: Part 1 – Ceasefire is a 2023 Indian Telugu-language epic neo-noir action thriller directed by Prashanth Neel. It serves as the introduction to a two-part saga centered on the fictional, dystopian city-state of Khansaar</p>
+                <button class="learn-btn">Learn More</button>
+
+
+            </div>
+            <div class="hero-right">
+                <div class="img-box">
+
+                    <img src="./images/cbit.jpeg" alt="Cbit institute">
+
+                </div>
+
+                
+            </div>
+        </div>
+
+    </section>
+    <!-- Course cards -->
+    <section>
+        <p class="course">Courses</p>
+        <hr>
+        <div class="cards-container">
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+
+
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="card">
+        <div>
+            <div class="card-image">
+                 <img src="./images/javaful.jpeg" alt="java" class="image">
+
+            </div>
+           
+            <p class="card-title">Java FullStack</p>
+            <p>In 2026, a Java Full Stack Developer is a software professional capable of building every layer of a web application—from the user-facing interface to the server-side logic and database management—using the Java ecosystem. </p>
+            <div class="btn-container">
+                <button class="price">rs.40000</button>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+        </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- testimonials -->
+     <section>
+        <div class="testimonials">
+            <div class="testimonial-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+                     quos recusandae! Id, facilis maxime qui facere vel alias, quos nisi neque,
+                      aspernatur quo eveniet exercitationem in dignissimos? Architecto, animi 
+                      itaque?</p>
+                      <p style="text-align: right;"><em>-Mukesh</em></p>
+
+            </div>
+
+               <div class="testimonial-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+                     quos recusandae! Id, facilis maxime qui facere vel alias, quos nisi neque,
+                      aspernatur quo eveniet exercitationem in dignissimos? Architecto, animi 
+                      itaque?</p>
+                      <p style="text-align: right;"><em>-Mukesh</em></p>
+
+            </div>
+
+               <div class="testimonial-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+                     quos recusandae! Id, facilis maxime qui facere vel alias, quos nisi neque,
+                      aspernatur quo eveniet exercitationem in dignissimos? Architecto, animi 
+                      itaque?</p>
+                      <p style="text-align: right;"><em>-Mukesh</em></p>
+
+            </div>
+
+
+        </div>
+        
+
+        </div>
+     </section>
+    
+    <!-- footer -->
+     <section>
+        <div class="footer">
+            <div class="box-1">
+                <div>Facebook</div>
+                 <div>Facebook</div>
+                 <div>Facebook</div>
+                 <div>Facebook</div>
+
+            </div>
+            <div class="box-2">
+                <div>Facebook</div>
+                 <div>Facebook</div>
+                 <div>Facebook</div>
+                 <div>Facebook</div>
+        
+            </div>
+            <div class="box-3">
+                <div>Facebook</div>
+                 <div>Facebook</div>
+                 <div>Facebook</div>
+                 <div>Facebook</div>
+              
+            </div>
+        </div>
+        <hr>
+     </section>
+
+    
+   
+</body>
+</html>
